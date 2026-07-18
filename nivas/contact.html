@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#b08d57">
+<title>Contact NIVAS — Book a Free Design Consultation</title>
+<meta name="description" content="Book a free site visit and 3D design for your modular kitchen or wardrobe. Call 9418189944, WhatsApp us, or visit our workshop on Khaira Road, Bhawarna, Kangra.">
+<link rel="canonical" href="contact.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%231c1a17'/%3E%3Ctext x='50' y='68' font-family='Georgia,serif' font-size='54' fill='%23b08d57' text-anchor='middle'%3EN%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="assets/css/pages.css">
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem("nivas:theme") ||
+        (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", t);
+    } catch (e) {}
+  })();
+</script>
+</head>
+
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header id="siteHeader"></header>
+
+<main id="main">
+
+  <section class="page-hero" style="min-height:52vh">
+    <div class="hero-media">
+      <img id="pageHeroImg" src="" alt="" width="1920" height="1080">
+    </div>
+    <div class="container page-hero-inner">
+      <nav class="crumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a><span class="sep">/</span><span>Contact</span>
+      </nav>
+      <h1>Let's talk about<br>your space.</h1>
+      <p>Site visit, measurement and a 3D design — all free, all before you commit to anything.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container contact-grid">
+
+      <!-- ===== DETAILS ===== -->
+      <aside>
+        <span class="eyebrow">Reach us</span>
+        <h2 style="font-size:2rem">Three ways to start.</h2>
+
+        <div class="contact-card mt-3">
+          <div class="contact-block">
+            <h4>Call or WhatsApp</h4>
+            <div class="contact-line"><span data-ico="phone"></span>
+              <span id="phoneLinks"></span>
+            </div>
+          </div>
+
+          <div class="contact-block">
+            <h4>Email</h4>
+            <div class="contact-line"><span data-ico="mail"></span>
+              <a id="emailLink" href="#"></a>
+            </div>
+          </div>
+
+          <div class="contact-block">
+            <h4>Workshop &amp; showroom</h4>
+            <div class="contact-line"><span data-ico="pin"></span>
+              <span id="addressText"></span>
+            </div>
+            <a class="link-arrow mt-2" id="mapLink" href="#" target="_blank" rel="noopener">
+              Open in Google Maps<span data-ico="arrowRight" data-ico-size="15"></span>
+            </a>
+          </div>
+
+          <div class="contact-block">
+            <h4>Opening hours</h4>
+            <div class="contact-line"><span data-ico="clock"></span>
+              <span id="hoursText"></span>
+            </div>
+          </div>
+
+          <hr class="rule">
+
+          <div class="flex gap-1 wrap">
+            <a class="btn btn-brass" id="waBtn" href="#" target="_blank" rel="noopener">WhatsApp us</a>
+            <a class="btn btn-outline" id="callBtn" href="#">Call now</a>
+          </div>
+        </div>
+      </aside>
+
+      <!-- ===== FORM ===== -->
+      <div>
+        <div class="contact-card" id="formCard">
+          <span class="eyebrow">Enquiry</span>
+          <h2 style="font-size:2rem">Tell us about your project</h2>
+          <p class="mt-1 mb-3">We reply within one working day, usually the same afternoon.</p>
+
+          <form id="enquiryForm" novalidate>
+            <div class="form-row">
+              <div class="field">
+                <label for="cName">Your name <span class="req">*</span></label>
+                <input class="input" id="cName" name="name" autocomplete="name" placeholder="Full name">
+                <span class="field-error"></span>
+              </div>
+              <div class="field">
+                <label for="cPhone">Mobile number <span class="req">*</span></label>
+                <input class="input" id="cPhone" name="phone" inputmode="numeric" autocomplete="tel" placeholder="10-digit number">
+                <span class="field-error"></span>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="cEmail">Email <span class="faint">(optional)</span></label>
+              <input class="input" id="cEmail" name="email" autocomplete="email" placeholder="you@example.com">
+              <span class="field-error"></span>
+            </div>
+
+            <div class="form-row">
+              <div class="field">
+                <label for="cService">What do you need? <span class="req">*</span></label>
+                <select class="select" id="cService" name="service">
+                  <option value="">Choose one</option>
+                </select>
+                <span class="field-error"></span>
+              </div>
+              <div class="field">
+                <label for="cLocation">Your location <span class="req">*</span></label>
+                <select class="select" id="cLocation" name="location">
+                  <option value="">Choose one</option>
+                  <option>Bhawarna</option>
+                  <option>Palampur</option>
+                  <option>Dharamshala</option>
+                  <option>Kangra</option>
+                  <option>Baijnath</option>
+                  <option>Other — I'll explain below</option>
+                </select>
+                <span class="field-error"></span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="field">
+                <label for="cBudget">Rough budget <span class="faint">(optional)</span></label>
+                <select class="select" id="cBudget" name="budget">
+                  <option value="">Not sure yet</option>
+                  <option>Under ₹1.5 lakh</option>
+                  <option>₹1.5 – 2.5 lakh</option>
+                  <option>₹2.5 – 4 lakh</option>
+                  <option>Above ₹4 lakh</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="cTimeline">When do you want it done?</label>
+                <select class="select" id="cTimeline" name="timeline">
+                  <option value="">Flexible</option>
+                  <option>Within a month</option>
+                  <option>In 1 – 3 months</option>
+                  <option>In 3 – 6 months</option>
+                  <option>Just exploring</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="cMessage">Anything else we should know?</label>
+              <textarea class="textarea" id="cMessage" name="message"
+                placeholder="Room size, layout you have in mind, existing kitchen you want replaced…"></textarea>
+            </div>
+
+            <label class="checkbox mb-3">
+              <input type="checkbox" id="cConsent" checked>
+              <span>You may contact me on WhatsApp about this enquiry.</span>
+            </label>
+
+            <button class="btn btn-brass btn-block" type="submit">
+              Send enquiry<span data-ico="send" data-ico-size="17"></span>
+            </button>
+            <p class="tiny faint mt-2 center">
+              This demo form opens your own email or WhatsApp app — nothing is stored on a server.
+            </p>
+          </form>
+        </div>
+
+        <!-- Map -->
+        <div class="map-frame mt-3">
+          <iframe id="mapFrame" title="Nivas Modular Concepts location on Google Maps"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer id="siteFooter"></footer>
+
+<script src="assets/data/site.js"></script>
+<script src="assets/js/ui.js"></script>
+<script src="assets/js/components.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/pages/contact.js"></script>
+</body>
+</html>

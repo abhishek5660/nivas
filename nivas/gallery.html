@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#b08d57">
+<title>Project Gallery — NIVAS Modular Concepts</title>
+<meta name="description" content="Browse completed modular kitchens, wardrobes, TV units and vanities by Nivas across Palampur, Dharamshala, Kangra and Bhawarna. Filter by room and layout.">
+<link rel="canonical" href="gallery.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%231c1a17'/%3E%3Ctext x='50' y='68' font-family='Georgia,serif' font-size='54' fill='%23b08d57' text-anchor='middle'%3EN%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="assets/css/pages.css">
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem("nivas:theme") ||
+        (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", t);
+    } catch (e) {}
+  })();
+</script>
+</head>
+
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header id="siteHeader"></header>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="hero-media">
+      <img id="pageHeroImg" src="" alt="" width="1920" height="1080">
+    </div>
+    <div class="container page-hero-inner">
+      <nav class="crumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a><span class="sep">/</span><span>Gallery</span>
+      </nav>
+      <h1>Our work</h1>
+      <p>Every project here was measured, manufactured and installed by our own team.
+        Filter by room or layout to find something close to your space.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+
+      <div class="filter-bar">
+        <div class="filter-set" id="catFilters" role="group" aria-label="Filter by room"></div>
+        <span class="filter-count" id="filterCount"></span>
+      </div>
+
+      <div class="filter-bar" style="margin-top:-18px">
+        <div class="filter-set" id="layoutFilters" role="group" aria-label="Filter by layout"></div>
+      </div>
+
+      <div class="gal-grid" id="galGrid"></div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="hero-media">
+      <img id="ctaImg" data-src="" src="" alt="" width="1920" height="1080" loading="lazy">
+    </div>
+    <div class="container cta-inner">
+      <span class="eyebrow" style="color:var(--brass-300)">Your turn</span>
+      <h2>Seen something you like?</h2>
+      <p>Tell us which project caught your eye and we will work out what the same thing
+        would cost in your space.</p>
+      <div class="cta-actions">
+        <a class="btn btn-white" href="contact.html">Get a free quote</a>
+        <a class="btn btn-light" href="services.html">See pricing</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Project viewer">
+  <button class="lb-btn lb-close" id="lbClose" aria-label="Close"></button>
+  <div class="lb-stage">
+    <button class="lb-btn lb-prev" id="lbPrev" aria-label="Previous project"></button>
+    <img id="lbImg" src="" alt="">
+    <button class="lb-btn lb-next" id="lbNext" aria-label="Next project"></button>
+    <div class="lb-caption">
+      <h4 id="lbTitle"></h4>
+      <p id="lbNote"></p>
+      <div class="lb-count" id="lbCount"></div>
+    </div>
+  </div>
+</div>
+
+<footer id="siteFooter"></footer>
+
+<script src="assets/data/site.js"></script>
+<script src="assets/js/ui.js"></script>
+<script src="assets/js/components.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/pages/gallery.js"></script>
+</body>
+</html>
